@@ -82,8 +82,8 @@ int main()
             int lift_number = -1;
             for(int i=0;i<num_elev;i++)
             {
-                if(lifts[i].checkIdle() || (cur.source > cur.destination && lifts[i].getFloor() > lifts[i].firstDestination()) 
-                || (cur.source < cur.destination && lifts[i].getFloor() < lifts[i].firstDestination()))
+                if(lifts[i].checkIdle() || (cur.source > lifts[i].getFloor() && lifts[i].getFloor() < lifts[i].firstDestination() && cur.source < cur.destination) 
+                || (cur.source > cur.destination && cur.source < lifts[i].getFloor() && lifts[i].getFloor() > lifts[i].firstDestination()))
                 {
                     int time_taken = abs(cur.source - lifts[i].getFloor());
                     if(time_taken < min_time_taken)
