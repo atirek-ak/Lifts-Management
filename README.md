@@ -12,3 +12,8 @@ The status of all the lifts are printed every 4 seconds, & the algorithm is impl
 g++ master.cpp elevator.cpp;   
 ./a.out  
 ```
+
+## References  
+https://stackoverflow.com/questions/34119315/non-blocking-programming-in-c-for-beginner  
+https://stackoverflow.com/questions/12207684/how-do-i-terminate-a-thread-in-c11  
+https://stackoverflow.com/questions/19871647/how-do-i-insert-objects-into-stl-set
